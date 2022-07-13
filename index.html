@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet"/>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<header class="main-header">
+   <a class="brand-logo">
+     <div class="brand-logo-name" id="nav-home">Petal</div>
+     <nav class="second-nav">
+     <div id="how-to-play">How to Play</div>
+     </nav>
+     </a>
+   <nav class="main-nav">
+     <ul>
+       <li><a href="about.html">About</a></li>
+       <li><a href="donations.html">Donations</a></li>
+       <li><a href="faq.html">FAQ</a></li>
+       </ul>
+    </nav>
+</header>
+<body>
+  <div id="how-to"></div>
+  <main id="playable-area">
+    <h1 id="game-title"> Petal </h1>
+<div id="buttons">
+<button id ="first-button" class="start-button">Start</button>
+<button id="second-button" class="reset-button">Reset</button>
+<h3 id="countdown"></h3>
+<h3 id="round"></h3>
+  </div>
+  <div id="second-row">
+    <h3 id="score"></h3>
+    <h3 id="high-score">High Score: 0</h3>
+    <p></p>
+    <h2 id="shuffled-word">Ready?</h2>
+</div>
+    <div id="display-board">
+
+    </div>
+    <div id="game-board">
+
+    </div>
+
+<div id="keyboard-cont">
+        <div class="first-row">
+            <button class="keyboard-button">q</button>
+            <button class="keyboard-button">w</button>
+            <button class="keyboard-button">e</button>
+            <button class="keyboard-button">r</button>
+            <button class="keyboard-button">t</button>
+            <button class="keyboard-button">y</button>
+            <button class="keyboard-button">u</button>
+            <button class="keyboard-button">i</button>
+            <button class="keyboard-button">o</button>
+            <button class="keyboard-button">p</button>
+        </div>
+        <div class="second-row">
+            <button class="keyboard-button">a</button>
+            <button class="keyboard-button">s</button>
+            <button class="keyboard-button">d</button>
+            <button class="keyboard-button">f</button>
+            <button class="keyboard-button">g</button>
+            <button class="keyboard-button">h</button>
+            <button class="keyboard-button">j</button>
+            <button class="keyboard-button">k</button>
+            <button class="keyboard-button">l</button>
+        </div>
+        <div class="third-row">
+            <button class="keyboard-button">Del</button>
+            <button class="keyboard-button">z</button>
+            <button class="keyboard-button">x</button>
+            <button class="keyboard-button">c</button>
+            <button class="keyboard-button">v</button>
+            <button class="keyboard-button">b</button>
+            <button class="keyboard-button">n</button>
+            <button class="keyboard-button">m</button>
+            <button class="keyboard-button">Enter</button>
+        </div>
+    </div>
+  <div class="game-over-text">
+    <h3 id="total-score"></h3>
+    </div>
+</main>
+<body class="shapes">
+<div id="loop-animation" class="background-shape"></div>
+<div class="background-shape2"></div>
+<div class="background-shape3"></div>
+<div class="background-shape4"></div>
+<!--<a id="message-ani" class="background-shape5" href="https://www.plannedparenthoodaction.org/issues/abortion/roe-v-wade">The Supreme Court Is Trying To Take Women's Rights Away</a>-->
+</body>
+
+<div id="info-text">
+<h4 id="motiv-para">The support you can provide shouldn't be limited by your disposable income. We can all play a part in changing the world for the better.</h4>
+<!-- <h4 id="fix-bug">Testing Testing 123</h4> -->
+</div>
+
+<!--
+<div class="how-to-play">
+<h2>How to Play</h2>
+<hr class="divider"></hr>
+<h4>The object of the game is to spell out any word, 4-letters or longer, using the randomized list of letters provided each round.</h4>
+<h4>There are 5 rounds, the first round you have 10 seconds and every additional round you have 10 seconds plus any remaining time</h4>
+<h4>Points are scored depending on how long the word you submit is, each round there will be at least one word that uses all the available letters</h4>
+<h4>The first 2 rounds will have 6 letters, the following two will have 7, and the final round will have 8. So don't spend too much time on the first words or you won't have much of a chance to figure out the last one!</h4>
+</div> -->
+<script
+src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script src="script.js" type="module"></script>
+</body>
+</html>
