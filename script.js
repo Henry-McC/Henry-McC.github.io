@@ -77,7 +77,7 @@ document.getElementById("buttons").addEventListener("click", (e) => {
       document.getElementById("round").innerHTML = `Round: ${round.number}/5`;
       document.getElementById("shuffled-word").innerHTML = `Ready?`;
       document.getElementById("score").innerHTML = `Score: ${userScore}`;
-//      document.getElementById("game-title").innerHTML = 'Shuffle Game';
+      document.getElementById("game-title").innerHTML = 'Petal';
       document.getElementById("total-score").innerHTML = ``
       return
     }
