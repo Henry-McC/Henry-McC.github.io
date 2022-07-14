@@ -223,7 +223,8 @@ var fakeWord = false;
 document.addEventListener("keyup", (e) => {
 
     if (guessesRemaining === 0) {
-      if (e.code === "Space" && roundOver === true) {
+      let pressedButton = String(e.key)
+      if ((e.code === "Space" || pressedButton === "Next Round") && roundOver === true) {
        round.number += 1;
        if (round.number === 6) {
          userScore = (userScore * multiplier).toFixed(0);
