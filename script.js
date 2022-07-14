@@ -64,6 +64,7 @@ document.getElementById("buttons").addEventListener("click", (e) => {
     if (target.classList.contains("reset-button")) {
       round.number = 1
       resetMe()
+      multiplier = 2
       deleteAll()
       resetBoard()
       resetDisplayWord()
@@ -225,6 +226,7 @@ document.addEventListener("keyup", (e) => {
       if (e.code === "Space" && roundOver === true) {
        round.number += 1;
        if (round.number === 6) {
+         userScore = (userScore * multiplier).toFixed(0);
          hScore()
          endGame()
        }
@@ -494,6 +496,8 @@ const animateCSS = (element, animation, prefix = 'animate__') =>
 // Timer Below
 let timerRunning = false;
 let date = 10;
+let multiplier = 2;
+setInterval(myMultiplier, 52);
 setInterval(myTimer, 1000);
 
 async function myTimer() {
@@ -504,8 +508,17 @@ if(date >= 0 && timerRunning === true) {
   timerRunning = false;
   document.getElementById("countdown").innerHTML = `Out of time!`;
   endGame2();  
-}
-}
+}}
+
+async function myMultiplier() {
+if(date >= 0 && timerRunning === true) {
+  //document.getElementById("multiplier").innerHTML = `${multiplier}`;  
+  multiplier -= .001;
+} if(multiplier === -1) {
+  timerRunning = false;
+  //document.getElementById("multiplier").innerHTML = `Out of time!`;
+  endGame2();  
+}}
 
 async function startTimer() {
   timerRunning = true;
