@@ -155,6 +155,11 @@
     margin: 0.5rem 0;
   }
   
+.fourth-row {
+  margin-top: 0.5rem;
+  margin-bottom: -.5rem;
+}
+
   .keyboard-button {
     font-size: 1rem;
     font-weight: 700;
@@ -163,6 +168,10 @@
     cursor: pointer;
     text-transform: uppercase;
   }
+
+#nr-button {
+  padding: .2rem;
+}
   
   .main-header {
     display: flex;
