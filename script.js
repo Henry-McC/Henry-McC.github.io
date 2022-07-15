@@ -25,8 +25,8 @@ let round = {
 
 export { round }; 
 
-if (localStorage.getItem("highscore") !== null) {
-    document.getElementById('high-score').innerHTML = `High Score: ${localStorage.getItem("highscore")`;
+if (localStorage.getItem('highScore') !== null) {
+    document.getElementById('high-score').innerHTML = `High Score: ${localStorage.getItem('highScore')`;
 }
 else {
     return
