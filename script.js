@@ -26,11 +26,9 @@ let round = {
 export { round }; 
 
 
-if (sessionStorage.getItem('highScore') !== null) {
-    document.getElementById('high-score').innerHTML = `High Score: ${sessionStorage.getItem('highScore')`;
-} else {
-    return
-    }
+sessionStorage.setItem('highScore', '')
+document.getElementById('high-score').innerHTML = `High Score: ${sessionStorage.getItem('highScore')`;
+
 
 //localStorage.getItem('highScore')
 
