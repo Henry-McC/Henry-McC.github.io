@@ -26,9 +26,10 @@ let round = {
 export { round }; 
 
 
-sessionStorage.setItem('highScore', '')
-document.getElementById('high-score').innerHTML = `High Score: ${sessionStorage.getItem('highScore')`;
-
+//sessionStorage.setItem('highScore', '')
+//document.getElementById('high-score').innerHTML = `High Score: ${sessionStorage.getItem('highScore')`;
+sessionStorage.setItem('message', 'howdy')
+document.getElementById('high-score').innerHTML = `High Score: ${sessionStorage.getItem('message')
 
 //localStorage.getItem('highScore')
 
@@ -545,7 +546,7 @@ async function resetTimer() {
 async function hScore() {
   if (`${userScore}` > `${highScore}`) {
     highScore = userScore
-    sessionStorage.setItem('highScore', highScore)
+   // sessionStorage.setItem('highScore', highScore)
   }
   document.getElementById("high-score").innerHTML = `High Score: ${highScore}`;
 }
