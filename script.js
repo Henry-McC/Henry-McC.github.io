@@ -26,12 +26,10 @@ let round = {
 export { round }; 
 
 
-//sessionStorage.setItem('highScore', '')
-//document.getElementById('high-score').innerHTML = `High Score: ${sessionStorage.getItem('highScore')`;
 sessionStorage.setItem('message', 'howdy')
-document.getElementById('high-score').innerHTML = `High Score: ${sessionStorage.getItem('message')`
+//let testMessage = sessionStorage.getItem('message')
+document.getElementById('high-score').innerHTML = `High Score: ${sessionStorage.getItem('message')}`
 
-//localStorage.getItem('highScore')
 
 
 String.prototype.replaceAt = function(index, replacement) {
