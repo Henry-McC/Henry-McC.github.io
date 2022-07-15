@@ -27,6 +27,7 @@ export { round };
 
 
 if (sessionStorage.getItem('message') !== null) {
+  highScore = sessionStorage.getItem('message')
   document.getElementById('high-score').innerHTML = `High Score: ${sessionStorage.getItem('message')}`
 } else {
    document.getElementById('high-score').innerHTML = `High Score: 0`
