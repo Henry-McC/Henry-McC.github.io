@@ -26,9 +26,16 @@ let round = {
 export { round }; 
 
 
-sessionStorage.setItem('message', highScore)
+if (sessionStorage.getItem('message') !== null) {
+  document.getElementById('high-score').innerHTML = `High Score: ${sessionStorage.getItem('message')}`
+} else {
+   document.getElementById('high-score').innerHTML = `High Score: 0`
+}
+
+
+//sessionStorage.setItem('message', highScore)
 //let testMessage = sessionStorage.getItem('message')
-document.getElementById('high-score').innerHTML = `High Score: ${sessionStorage.getItem('message')}`
+//document.getElementById('high-score').innerHTML = `High Score: ${sessionStorage.getItem('message')}`
 
 
 
@@ -544,7 +551,7 @@ async function resetTimer() {
 async function hScore() {
   if (`${userScore}` > `${highScore}`) {
     highScore = userScore
-   // sessionStorage.setItem('highScore', highScore)
+    sessionStorage.setItem('message', highScore)
   }
   document.getElementById("high-score").innerHTML = `High Score: ${highScore}`;
 }
