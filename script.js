@@ -25,10 +25,14 @@ let round = {
 
 export { round }; 
 
-/*
-window.localStorage.setItem('highScore', '');
-window.localStorage.getItem('highScore')
-*/
+if (localStorage.getItem("highscore") !== null) {
+    document.getElementById('high-score').innerHTML = `High Score: ${localStorage.getItem("highscore")`;
+}
+else {
+    return
+}
+//localStorage.getItem('highScore')
+
 
 String.prototype.replaceAt = function(index, replacement) {
     if (index >= this.length) {
@@ -542,6 +546,7 @@ async function resetTimer() {
 async function hScore() {
   if (`${userScore}` > `${highScore}`) {
     highScore = userScore
+    localStorage.setItem('highScore', highScore)
   }
   document.getElementById("high-score").innerHTML = `High Score: ${highScore}`;
 }
