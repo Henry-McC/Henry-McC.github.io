@@ -14,7 +14,7 @@ let maxLength = 6;
 let rightGuessString = shuffled.word;
 let inProgress = false;
 let roundOver = false;
-let highScore = 0
+let highScore = 5
 let displayWord = (shuffled.word).shuffle()
 let tempWord = displayWord
 let wordLength = 6
@@ -26,7 +26,7 @@ let round = {
 export { round }; 
 
 
-sessionStorage.setItem('message', 'howdy')
+sessionStorage.setItem('message', highScore)
 //let testMessage = sessionStorage.getItem('message')
 document.getElementById('high-score').innerHTML = `High Score: ${sessionStorage.getItem('message')}`
 
