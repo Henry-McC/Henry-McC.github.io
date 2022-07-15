@@ -29,7 +29,7 @@ export { round };
 //sessionStorage.setItem('highScore', '')
 //document.getElementById('high-score').innerHTML = `High Score: ${sessionStorage.getItem('highScore')`;
 sessionStorage.setItem('message', 'howdy')
-document.getElementById('high-score').innerHTML = `High Score: ${sessionStorage.getItem('message')
+document.getElementById('high-score').innerHTML = `High Score: ${sessionStorage.getItem('message')`
 
 //localStorage.getItem('highScore')
 
