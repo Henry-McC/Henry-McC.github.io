@@ -25,10 +25,10 @@ let round = {
 
 export { round }; 
 
-/*
-if (localStorage.getItem('highScore') !== null) {
-    document.getElementById('high-score').innerHTML = `High Score: ${localStorage.getItem('highScore')`;
-}*/
+
+if (sessionStorage.getItem('highScore') !== null) {
+    document.getElementById('high-score').innerHTML = `High Score: ${sessionStorage.getItem('highScore')`;
+}
 
 //localStorage.getItem('highScore')
 
@@ -545,7 +545,7 @@ async function resetTimer() {
 async function hScore() {
   if (`${userScore}` > `${highScore}`) {
     highScore = userScore
-    //localStorage.setItem('highScore', highScore)
+    sessionStorage.setItem('highScore', highScore)
   }
   document.getElementById("high-score").innerHTML = `High Score: ${highScore}`;
 }
