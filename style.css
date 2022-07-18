@@ -16,6 +16,12 @@
     align-items: center;
     text-align: center
   }
+
+@media screen and (max-width:640px) {
+  #playable-area {
+    width: 90%;
+  }
+}
   
   h1 {
    text-align: center;
