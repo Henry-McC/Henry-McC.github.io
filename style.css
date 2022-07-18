@@ -475,6 +475,9 @@
   }
   
 @media screen and (max-width:640px) {
+  body {
+      background-color: red;
+    }
   #playable-area {
     width: 90%;
   }
@@ -482,9 +485,8 @@
   font-size: 1rem;
   font-weight: 700;
   padding: 0.2rem;
-  margin: 0 1px;
-}
-}
+  margin: 0 0px;
+}}
 
   
   /*
