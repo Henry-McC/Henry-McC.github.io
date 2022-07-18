@@ -475,16 +475,13 @@
   }
   
 @media screen and (max-width:640px) {
-  body {
-      background-color: red;
-    }
   #playable-area {
     width: 90%;
   }
   .keyboard-button {
   font-size: 1rem;
   font-weight: 700;
-  padding: 0.2rem;
+  padding: 0rem;
   margin: 0 0px;
 }}
 
