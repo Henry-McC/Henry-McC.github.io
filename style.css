@@ -16,12 +16,6 @@
     align-items: center;
     text-align: center
   }
-
-@media screen and (max-width:640px) {
-  #playable-area {
-    width: 90%;
-  }
-}
   
   h1 {
    text-align: center;
@@ -480,6 +474,18 @@
     margin-right:10%;
   }
   
+@media screen and (max-width:640px) {
+  #playable-area {
+    width: 90%;
+  }
+  .keyboard-button {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.2rem;
+  margin: 0 1px;
+}
+}
+
   
   /*
   #loop-animation {
