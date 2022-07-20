@@ -167,7 +167,6 @@
     margin: 0 2px;
     cursor: pointer;
     text-transform: uppercase;
-    //border-radius: 2px;
   }
 
 #nr-button {
@@ -485,6 +484,7 @@
   padding: 0rem;
   margin: 0 0px;
   width: 35%;
+  border-radius: 10px;
 }
 #nr-button {
    width: 70%;
