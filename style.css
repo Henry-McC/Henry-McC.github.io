@@ -484,7 +484,9 @@
   padding: 0rem;
   margin: 0 0px;
   width: 35%;
-  border-radius: 10px;
+  border-radius: 5px;
+  height: 35px;
+  width: 30px;
 }
 #nr-button {
    width: 70%;
