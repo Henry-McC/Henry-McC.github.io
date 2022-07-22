@@ -487,7 +487,7 @@
   //width: 35%;
   border-radius: 5px;
   height: 45px;
-  width: 35px;
+  width: 40px;
 }
 #nr-button {
    width: 70%;
@@ -520,6 +520,9 @@
  }
 .instructions {
     width: 95%;
+    }
+ .main-nav a {
+  padding: 0px;
     }
 }
 
