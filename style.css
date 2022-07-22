@@ -142,13 +142,16 @@
   
   #keyboard-cont {
     margin: 1rem 0;
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
+    height: 200px;
   }
   
   #keyboard-cont div {
+    width: 100%;
     display: flex;
+    justify-content: center;
   }
   
   .second-row {
@@ -483,11 +486,11 @@
   font-size: .8rem;
   font-weight: 700;
   padding: 0rem;
-  margin: 0 0px;
+  margin: 0 1 0px;
   //width: 35%;
   border-radius: 5px;
   height: 45px;
-  width: 40px;
+ // width: 40px;
 }
 #nr-button {
    width: 70%;
