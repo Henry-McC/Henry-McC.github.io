@@ -491,7 +491,28 @@
 }
 #nr-button {
    width: 70%;
-}}
+}
+.background-shape {
+  display: none;
+  visibility: hidden;
+}
+.background-shape2 {
+  display: none;
+  visibility: hidden;
+}
+.background-shape3 {
+  display: none;
+  visibility: hidden;
+}
+.background-shape4 {
+  display: none;
+  visibility: hidden;
+}
+.background-shape5 {
+  display: none;
+  visibility: hidden;
+}
+}
 
   
   /*
