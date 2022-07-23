@@ -480,7 +480,7 @@
   
 @media screen and (max-width:640px) {
   #playable-area {
-    width: 90%;
+    width: 96%;
   }
   .keyboard-button {
   font-size: .8rem;
@@ -525,6 +525,12 @@
     }
  .main-nav a {
   padding: 0px;
+    }
+ .letter-box {
+  width: 2rem;
+    }
+ .display-box {
+  width: 1.8rem;
     }
 }
 
