@@ -485,11 +485,10 @@
   .keyboard-button {
   font-size: .8rem;
   font-weight: 700;
-  margin: 0 1 0px;
-  //width: 35%;
   border-radius: 5px;
   height: 45px;
- // width: 40px;
+  padding: 0.64rem;
+  margin: 0 1px;
 }
 #nr-button {
    width: 70%;
