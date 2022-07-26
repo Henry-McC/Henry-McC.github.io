@@ -238,6 +238,7 @@ document.addEventListener("keyup", (e) => {
        round.number += 1;
        if (round.number === 6) {
          userScore = (userScore * multiplier).toFixed(0);
+         document.getElementById("score").innerHTML = `Score: ${userScore}`;
          hScore()
          endGame()
        }
